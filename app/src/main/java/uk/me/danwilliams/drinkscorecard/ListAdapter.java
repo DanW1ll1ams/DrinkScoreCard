@@ -54,7 +54,7 @@ public class ListAdapter extends BaseAdapter {
         }
 
         holder.holeLabel.setText(mHoles[position].getLabel());
-        holder.strokeLabel.setText(mHoles[position].getLabel() + "");
+        holder.strokeLabel.setText(mHoles[position].getStrokeCount() + "");
         holder.addStrokeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
